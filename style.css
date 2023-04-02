@@ -9,7 +9,6 @@ h3, h1{
 #main-container{
     height: 800px;
     width: 375px;
-    border: 1px dotted red;
     box-sizing: border-box;
     align-items: center;
     justify-content : center;
