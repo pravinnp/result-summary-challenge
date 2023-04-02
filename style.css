@@ -1,0 +1,159 @@
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+h3, h1{
+    padding: 0px;
+    margin: 0px;
+}
+
+#main-container{
+    height: 800px;
+    width: 375px;
+    border: 1px dotted red;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content : center;
+}
+
+#top-container {
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+    background-color: #1125d4;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+
+#top-container p, #top-container h2, #title{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+
+
+#score-container {    
+    display : flex;
+    flex-direction: column;
+    margin-top: 10px;
+    height: 150px;
+    width: 150px;
+    color: white;
+    background-color: rgb(53, 68, 202);
+    border: 1px dotted rgb(53, 68, 202);;
+    border-radius: 50%;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+
+
+#score {
+    font-size: 1.2rem;
+    font-weight: 800;
+    opacity: 1.5;
+}
+
+#total-score {
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+#top-container p{
+    opacity: 0.7;
+}
+
+
+#bottom-container{
+    height: 55%;
+    padding: 15px;
+}
+
+#rows{
+    border-radius: 10px;
+}
+
+.row-format {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 15%;
+}
+
+#row-1{
+    background-color: hsl(0, 100%, 96%);
+    color: rgb(235, 130, 148);
+}
+
+
+#row-2{
+    background-color: hsl(55, 63%, 79%);
+    color: rgb(223, 166, 59);
+}
+
+#row-3{
+    background-color: hsl(166, 57%, 82%) ;
+    color: #4da784;
+}
+#row-4{
+    background-color: hsl(241, 100%, 89%);
+    color: rgb(139, 74, 196);
+}
+
+.row-format img {
+    padding-left: 15px;
+    flex-basis: 5%;
+}
+.row-format h3{
+    padding-left: 15px;
+    flex-basis: 55%;
+}
+
+.row-format h4{
+    padding-right: 5px;
+}
+
+
+
+
+
+
+button{
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    margin-top: 15px;
+    background-color: rgb(126, 103, 103);
+    color : white;
+    padding: 15px;
+    width: 70%;
+    border: none;
+    border-radius: 25px;
+}
+
+@media (min-width : 500px){
+    #main-container{
+        display: flex;
+        flex-direction: row;
+        height: 450px;
+        width: 700px;
+    }
+    #top-container{
+        height: 100%;
+        width: 50%;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+    }
+    
+    .top-container-content,#score-container, #title{
+        margin-top : 30px;
+    }
+
+    #bottom-container{
+        width: 50%;
+        height: 100%;
+    }
+}
